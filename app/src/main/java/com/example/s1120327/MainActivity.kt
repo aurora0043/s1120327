@@ -116,20 +116,3 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             }
         }
     }
-
-/*@Composable
-fun SwipeToChangeColorBox() {
-    val colors = listOf(Color.Red, Color.Green, Color.Blue, Color.Yellow)
-    var currentIndex by remember { mutableStateOf(0) }
-    Box( modifier = Modifier .fillMaxSize() .background(colors[currentIndex])
-        .pointerInput(Unit) {
-            detectHorizontalDragGestures { change, dragAmount -> change.consume()
-                if (dragAmount > 0) {
-                    currentIndex = (currentIndex + 1) % colors.size }
-                else if (dragAmount < 0) {
-                    currentIndex = if (currentIndex - 1 < 0) colors.size - 1
-                }
-
-                }
-        }
-}*/
