@@ -68,7 +68,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     var currentColorIndex by remember { mutableStateOf(0) }
     val backgroundColor by animateColorAsState(
         targetValue = colors[currentColorIndex],
-        animationSpec = tween(durationMillis = 100)
+        animationSpec = tween(durationMillis = 1000)
     )
 
     Box(
